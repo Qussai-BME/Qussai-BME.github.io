@@ -1,0 +1,60 @@
+:root{--ink:#14241f;--ink-soft:#55645e;--paper:#f6f1e9;--paper-bright:#fcfaf6;--paper-dim:#e8dfd2;--signal:#0d6b66;--signal-deep:#104a47;--signal-pale:#dcebe5;--coral:#b75f48;--gold:#b78b5b;--line:rgba(20,36,31,.18)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",Arial,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-wrap:anywhere}
+a{overflow-wrap:anywhere}
+.list li,.refs li{overflow-wrap:anywhere;word-break:break-word}
+a{color:var(--signal-deep);text-decoration:none;border-bottom:1px solid rgba(16,74,71,.35)}
+a:hover{border-bottom-color:var(--signal-deep)}
+.wrap{max-width:1180px;margin:auto;padding:0 32px}
+.top{padding:24px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center;background:var(--paper-bright)}
+.brand{font-family:"DM Serif Display",Georgia,serif;font-size:1.18rem;letter-spacing:-.02em;color:var(--signal-deep)}
+.brand small{display:block;font-family:"IBM Plex Sans",sans-serif;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;margin-top:2px}
+.nav{display:flex;gap:26px;font-size:.82rem;letter-spacing:.02em}
+.nav a{color:var(--ink-soft);border-bottom:none}
+.nav a:hover{color:var(--signal-deep)}
+.hero{padding:88px 0 68px;background:linear-gradient(160deg,var(--paper-bright) 0%,var(--paper) 62%,var(--signal-pale) 130%)}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:600;color:var(--coral)}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.1;margin:0 0 18px;letter-spacing:-.03em;color:var(--ink)}
+h1{font-size:clamp(2.5rem,5.4vw,4.1rem);max-width:900px;letter-spacing:-.04em}
+h2{font-size:clamp(1.7rem,3vw,2.3rem)}
+h3{font-size:1.2rem;margin-bottom:10px}
+em{font-style:italic;color:var(--signal-deep)}
+.lede{font-size:1.2rem;color:var(--ink-soft);max-width:740px;margin-top:18px}
+.status{display:inline-flex;align-items:center;gap:8px;margin:26px 0 0;padding:9px 16px;border:1px solid var(--line);background:var(--paper-bright);color:var(--signal-deep);font-size:.82rem;font-weight:500;letter-spacing:.01em}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:28px}
+.main{grid-column:span 8}
+.side{grid-column:span 4}
+.section{padding:60px 0;border-bottom:1px solid var(--line)}
+.card{background:var(--paper-bright);border:1px solid var(--line);padding:32px}
+.card h3{margin-top:0;color:var(--signal-deep)}
+.card + .card{margin-top:20px}
+.pill{display:inline-block;background:var(--signal-pale);color:var(--signal-deep);padding:4px 11px;margin:3px 6px 3px 0;font-size:.78rem;letter-spacing:.01em}
+.metric{font-family:"DM Serif Display",Georgia,serif;font-size:2.3rem;color:var(--signal-deep);display:block}
+.list{padding-left:1.2rem;margin:0}
+.list li{margin:11px 0;color:var(--ink)}
+.note{border-left:3px solid var(--gold);background:var(--paper-dim);padding:20px 22px;color:var(--ink-soft)}
+.note strong{color:var(--ink)}
+.footer{padding:40px 0 64px;color:var(--ink-soft);font-size:.85rem;border-top:1px solid var(--line);margin-top:20px}
+.footer a{color:var(--ink-soft)}
+.cv{background:var(--paper-bright)}
+.cv .hero{padding:60px 0;background:var(--signal-deep);color:var(--paper-bright)}
+.cv .eyebrow{color:var(--gold)}
+.cv h1{color:var(--paper-bright)}
+.cv .lede,.cv .muted{color:var(--signal-pale)}
+.cv .section{padding:44px 0}
+.cv h1{font-size:clamp(2.2rem,4.4vw,3.4rem)}
+.cv .card{box-shadow:none}
+.refs{font-size:.92rem;padding-left:1.2rem}
+.refs li{margin:9px 0;color:var(--ink-soft)}
+.candidate-card h3{font-family:"DM Serif Display",Georgia,serif;font-size:1.35rem;margin-bottom:4px}
+.candidate-card p{margin:2px 0;color:var(--ink-soft);font-size:.94rem}
+.candidate-card .cta{display:inline-block;margin-top:14px;font-size:.85rem;font-weight:500;color:var(--signal-deep);border-bottom:1px solid var(--signal-deep)}
+@media(max-width:760px){
+  .wrap{padding:0 20px}
+  .top{align-items:flex-start;flex-direction:column;gap:12px}
+  .nav{flex-wrap:wrap;gap:16px}
+  .hero{padding:56px 0}
+  .grid{display:block}
+  .main,.side{margin-bottom:24px}
+  .cv h1{font-size:2.4rem}
+}
